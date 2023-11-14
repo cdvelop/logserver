@@ -11,12 +11,12 @@ import (
 )
 
 func TestLogger(t *testing.T) {
-	file_name := "log_test"
+	file_name := "log_test.log"
 
 	log_text := "escribiendo Log %v"
 	total := 10
 
-	os.Remove(file_name + ".log")
+	os.Remove(file_name)
 
 	logserver.Add(file_name)
 
@@ -26,7 +26,7 @@ func TestLogger(t *testing.T) {
 
 	expected := fmt.Sprintf(log_text, total-1)
 
-	res := gotools.TextExists(file_name+".log", expected)
+	res := gotools.TextExists(file_name, expected)
 	if res != 1 {
 		log.Fatalf("se esperaba como resultado 1 y se obtuvo: %v texto: %v", res, expected)
 	}

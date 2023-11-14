@@ -15,16 +15,16 @@ func (logServer) Log(message ...interface{}) interface{} {
 
 func (l logServer) Write(p []byte) (n int, err error) {
 
-	f, err := os.OpenFile(l.log_file_name+".log", os.O_APPEND|os.O_CREATE|os.O_RDWR, 0666)
+	f, err := os.OpenFile(l.log_file_name, os.O_APPEND|os.O_CREATE|os.O_RDWR, 0666)
 	if err != nil {
-		e := "Archivo server.log no existe"
+		e := "Archivo " + l.log_file_name + " no existe"
 		fmt.Println(e, err)
 		return 0, model.Error(e, err)
 	}
 
 	_, err = f.Write(p)
 	if err != nil {
-		e := "no se puede escribir en el archivo server.log"
+		e := "no se puede escribir en el archivo " + l.log_file_name
 		fmt.Println(e, err)
 		return 0, model.Error(e, err)
 	}
