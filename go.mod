@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/cdvelop/gotools v0.0.56
-	github.com/cdvelop/model v0.0.67
+	github.com/cdvelop/model v0.0.68
 )
 
 require (

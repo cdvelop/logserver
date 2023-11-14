@@ -22,11 +22,13 @@ func (l logServer) Write(p []byte) (n int, err error) {
 		return 0, model.Error(e, err)
 	}
 
-	_, err = f.Write(p)
-	if err != nil {
-		e := "no se puede escribir en el archivo " + l.log_file_name
-		fmt.Println(e, err)
-		return 0, model.Error(e, err)
+	if len(p) != 0 {
+		_, err = f.Write(p)
+		if err != nil {
+			e := "no se puede escribir en el archivo " + l.log_file_name
+			fmt.Println(e, err)
+			return 0, model.Error(e, err)
+		}
 	}
 
 	return 0, nil
