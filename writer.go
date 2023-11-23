@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-
-	"github.com/cdvelop/model"
 )
 
 func (logServer) Log(message ...interface{}) interface{} {
@@ -19,7 +17,7 @@ func (l logServer) Write(p []byte) (n int, err error) {
 	if err != nil {
 		e := "Archivo " + l.log_file_name + " no existe"
 		fmt.Println(e, err)
-		return 0, model.Error(e, err)
+		return 0, fmt.Errorf(e, err)
 	}
 
 	if len(p) != 0 {
@@ -27,7 +25,7 @@ func (l logServer) Write(p []byte) (n int, err error) {
 		if err != nil {
 			e := "no se puede escribir en el archivo " + l.log_file_name
 			fmt.Println(e, err)
-			return 0, model.Error(e, err)
+			return 0, fmt.Errorf(e, err)
 		}
 	}
 
