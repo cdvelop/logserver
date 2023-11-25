@@ -1,6 +1,9 @@
 package logserver
 
-import "log"
+import (
+	"log"
+	"os"
+)
 
 // log_file ej: "logs.log" default: app.log
 func Add(log_file ...string) *logServer {
@@ -11,11 +14,17 @@ func Add(log_file ...string) *logServer {
 		file_name = v
 	}
 
-	logger := &logServer{
+	l := &logServer{
 		log_file_name: file_name,
 	}
 
-	log.SetOutput(logger)
+	for _, arg := range os.Args {
+		if arg == "dev" {
+			l.dev_mode = true
+		}
+	}
 
-	return logger
+	log.SetOutput(l)
+
+	return l
 }
