@@ -2,14 +2,14 @@ module github.com/cdvelop/logserver
 
 go 1.20
 
-require github.com/cdvelop/gotools v0.0.62
+require github.com/cdvelop/gotools v0.0.63
 
 require (
-	github.com/cdvelop/input v0.0.57 // indirect
-	github.com/cdvelop/model v0.0.74 // indirect
+	github.com/cdvelop/input v0.0.58 // indirect
+	github.com/cdvelop/model v0.0.75 // indirect
 	github.com/cdvelop/output v0.0.16
 	github.com/cdvelop/strings v0.0.7 // indirect
-	github.com/cdvelop/timetools v0.0.23 // indirect
+	github.com/cdvelop/timetools v0.0.24 // indirect
 	golang.org/x/text v0.14.0 // indirect
 )
 
