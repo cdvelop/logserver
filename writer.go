@@ -6,8 +6,13 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/cdvelop/model"
 	"github.com/cdvelop/output"
 )
+
+func (l *logServer) AddHandlerToRegisterLogsInDB(db model.DataBaseAdapter) {
+	l.Log("AddHandlerToRegisterLogsInDB no implementado en logserver")
+}
 
 func (l logServer) Log(message ...interface{}) interface{} {
 
