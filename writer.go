@@ -16,14 +16,14 @@ func (l *logServer) AddHandlerToRegisterLogsInDB(h *model.Handlers) {
 
 func (l logServer) Log(message ...interface{}) interface{} {
 
+	var other bool
+	var out_string string
+	var space string
+
 	if l.dev_mode {
-		var out_string string
-		var space string
 
 		for _, msg := range message {
-
 			switch msg := msg.(type) {
-
 			case string:
 				out_string += space + msg
 			case int:
@@ -36,15 +36,20 @@ func (l logServer) Log(message ...interface{}) interface{} {
 				out_string += space + strconv.FormatBool(msg)
 
 			default:
-				fmt.Println(msg)
+				other = true
+				break
 			}
 			space = " "
 		}
 
+	}
+	if other {
+		log.Println(message...)
+
+	} else {
 		output.PrintInfo(out_string)
 	}
 
-	log.Println(message...)
 	return nil
 }
 
