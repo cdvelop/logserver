@@ -37,7 +37,6 @@ func (l logServer) Log(message ...interface{}) interface{} {
 
 			default:
 				other = true
-				break
 			}
 			space = " "
 		}
