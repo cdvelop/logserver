@@ -18,7 +18,7 @@ func TestLogger(t *testing.T) {
 
 	os.Remove(file_name)
 
-	logserver.Add(file_name)
+	logserver.AddLoggerAdapter(file_name)
 
 	for i := 1; i < total; i++ {
 		log.Printf(log_text, i)

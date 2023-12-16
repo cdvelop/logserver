@@ -6,7 +6,7 @@ import (
 )
 
 // log_file ej: "logs.log" default: app.log
-func Add(log_file ...string) *logServer {
+func AddLoggerAdapter(log_file ...string) *logServer {
 
 	var file_name = "app.log"
 
