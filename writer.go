@@ -10,7 +10,7 @@ import (
 	"github.com/cdvelop/output"
 )
 
-func (l *logServer) AddHandlerToRegisterLogsInDB(db model.DataBaseAdapter) {
+func (l *logServer) AddHandlerToRegisterLogsInDB(h *model.Handlers) {
 	l.Log("AddHandlerToRegisterLogsInDB no implementado en logserver")
 }
 
