@@ -9,8 +9,10 @@ require (
 )
 
 require (
-	github.com/cdvelop/input v0.0.74 // indirect
+	github.com/cdvelop/input v0.0.75 // indirect
 	github.com/cdvelop/strings v0.0.9 // indirect
 	github.com/cdvelop/timetools v0.0.32 // indirect
 	golang.org/x/text v0.14.0 // indirect
 )
+
+replace github.com/cdvelop/model => ../model

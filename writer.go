@@ -10,17 +10,16 @@ import (
 	"github.com/cdvelop/output"
 )
 
-func (l *logServer) AddHandlerToRegisterLogsInDB(h *model.Handlers) {
+func (l *logServer) AddHandlerToRegisterLogsInDB(h *model.MainHandler) {
 	l.Log("AddHandlerToRegisterLogsInDB no implementado en logserver")
 }
 
 func (l logServer) Log(message ...interface{}) interface{} {
 
-	var other bool
-	var out_string string
-	var space string
-
 	if l.dev_mode {
+		var other bool
+		var out_string string
+		var space string
 
 		for _, msg := range message {
 			switch msg := msg.(type) {
@@ -41,12 +40,13 @@ func (l logServer) Log(message ...interface{}) interface{} {
 			space = " "
 		}
 
-	}
-	if other {
-		log.Println(message...)
-
+		if other {
+			fmt.Println(message...)
+		} else {
+			output.PrintInfo(out_string)
+		}
 	} else {
-		output.PrintInfo(out_string)
+		log.Println(message...)
 	}
 
 	return nil
