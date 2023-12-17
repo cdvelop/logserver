@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/cdvelop/gotools v0.0.77
-	github.com/cdvelop/model v0.0.102
+	github.com/cdvelop/model v0.0.103
 	github.com/cdvelop/output v0.0.16
 )
 
