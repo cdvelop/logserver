@@ -8,7 +8,7 @@ import (
 // log_file ej: "logs.log" default: app.log
 func AddLoggerAdapter(log_file ...string) *logServer {
 
-	var file_name = "app.log"
+	var file_name = "logs.log"
 
 	for _, v := range log_file {
 		file_name = v
