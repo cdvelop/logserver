@@ -43,7 +43,8 @@ func (l logServer) Log(message ...interface{}) interface{} {
 		if other {
 			fmt.Println(message...)
 		} else {
-			output.PrintInfo(out_string)
+			output.PrintInfo(out_string) // no genera salto de linea :(
+			fmt.Println()
 		}
 	} else {
 		log.Println(message...)
