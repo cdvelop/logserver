@@ -10,7 +10,7 @@ require (
 
 require (
 	github.com/cdvelop/input v0.0.83 // indirect
-	github.com/cdvelop/timetools v0.0.38 // indirect
+	github.com/cdvelop/timetools v0.0.39 // indirect
 	golang.org/x/text v0.14.0 // indirect
 )
 
