@@ -1,10 +1,10 @@
-github.com/cdvelop/gotools v0.0.83 h1:JJnalGTFVecwiS8NdyyEClbTiadvn4s4gaWp9nCYyjU=
-github.com/cdvelop/gotools v0.0.83/go.mod h1:YPiXO/QA6IjOupKh7CaJmWmSJs9fKBtOaANwYAVLT4o=
-github.com/cdvelop/input v0.0.83 h1:GNtOgYFwS/PVjePEDGGiiNP9jn/bT2K80oHQ0ea2jK4=
-github.com/cdvelop/input v0.0.83/go.mod h1:IkjU2/0tE71mN1C6bLfeAAxe7P8MNM2w/+p7mUWCypA=
+github.com/cdvelop/gotools v0.0.85 h1:dw1Sv4n7cuS4wbQMV3oG4eckhiSHFdIvKwsg8zaXU58=
+github.com/cdvelop/gotools v0.0.85/go.mod h1:FEa7Wet7n9QZ0AUMU3y44Jdt8HpUiXN0+T09A2EN78s=
+github.com/cdvelop/input v0.0.85 h1:N8u7jS8lqCLqX+LxXho4i/uXH7F2mMSC7DeRJZb32Xc=
+github.com/cdvelop/input v0.0.85/go.mod h1:NlLhR6N6t8Lo6clYzZ1YD51CqejsjQZGs5NRkBugycg=
 github.com/cdvelop/output v0.0.16 h1:4hmAy0kF98dVEWj2qq6fMtiq3pz1ZTDmxf9AgHiBb7g=
 github.com/cdvelop/output v0.0.16/go.mod h1:J0NdlSxlURjPlX82VUmaq7o9Z4omOSH0yLUoioPdELc=
-github.com/cdvelop/timetools v0.0.39 h1:0uSwUnIzPvHqalcdETlfXLyIlxIhChfkXlCwW0WlR9U=
-github.com/cdvelop/timetools v0.0.39/go.mod h1:FLXt6dvkY4x3rjgRYX7J5XK2H6aHIdxV+fBA+Apj7J8=
+github.com/cdvelop/timetools v0.0.40 h1:949ornmesdtHGRT8swLCdIJfgCaiB5gcmaKOHzBMFLE=
+github.com/cdvelop/timetools v0.0.40/go.mod h1:FLXt6dvkY4x3rjgRYX7J5XK2H6aHIdxV+fBA+Apj7J8=
 golang.org/x/text v0.14.0 h1:ScX5w1eTa3QqT8oi6+ziP7dTV1S2+ALU0bI+0zXKWiQ=
 golang.org/x/text v0.14.0/go.mod h1:18ZOQIKpY8NJVqYksKHtTdi31H5itFRjB5/qKTNYzSU=
