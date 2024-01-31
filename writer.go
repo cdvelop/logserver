@@ -6,15 +6,10 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/cdvelop/model"
 	"github.com/cdvelop/output"
 )
 
-func (l *logServer) AddHandlerToRegisterLogsInDB(h *model.MainHandler) {
-	l.Log("AddHandlerToRegisterLogsInDB no implementado en logserver")
-}
-
-func (l logServer) Log(message ...interface{}) interface{} {
+func (l logServer) Log(message ...any) {
 
 	if l.dev_mode {
 		var other bool
@@ -50,7 +45,6 @@ func (l logServer) Log(message ...interface{}) interface{} {
 		log.Println(message...)
 	}
 
-	return nil
 }
 
 func (l logServer) Write(p []byte) (n int, err error) {
