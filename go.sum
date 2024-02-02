@@ -1,10 +1,8 @@
 github.com/cdvelop/gotools v0.0.88 h1:xY3dAgJ6Y5frnAKrqDOJ0hiCc5WLlcAaqTzpEIJ0gCY=
 github.com/cdvelop/gotools v0.0.88/go.mod h1:9i2M8Tbb2vkuuDCre0kVnclsdVNhJsSoWTfozvT/81s=
-github.com/cdvelop/input v0.0.88 h1:1yZe77hb4Qhw9k664xJFY2WSV0MbuMPRUx+cKlmgchE=
-github.com/cdvelop/input v0.0.88/go.mod h1:tuuQyZ6l3SUxoq+NDwWHVUbln69Aesx15xkQzAt+irk=
+github.com/cdvelop/input v0.0.89 h1:QXOLeIhRZx8qHtJXIfxJHg1d9zFhiuMzJOThxJGdfns=
+github.com/cdvelop/input v0.0.89/go.mod h1:DtH6pj7YPIs7lyk0wohEJgMiUA3XeaXotKK2y9E+fsQ=
 github.com/cdvelop/output v0.0.16 h1:4hmAy0kF98dVEWj2qq6fMtiq3pz1ZTDmxf9AgHiBb7g=
 github.com/cdvelop/output v0.0.16/go.mod h1:J0NdlSxlURjPlX82VUmaq7o9Z4omOSH0yLUoioPdELc=
-github.com/cdvelop/timetools v0.0.42 h1:yfSsGsfTw4QdXylseYXrmoGEtwzYJ/kGlF8a22Lv4f4=
-github.com/cdvelop/timetools v0.0.42/go.mod h1:FLXt6dvkY4x3rjgRYX7J5XK2H6aHIdxV+fBA+Apj7J8=
 golang.org/x/text v0.14.0 h1:ScX5w1eTa3QqT8oi6+ziP7dTV1S2+ALU0bI+0zXKWiQ=
 golang.org/x/text v0.14.0/go.mod h1:18ZOQIKpY8NJVqYksKHtTdi31H5itFRjB5/qKTNYzSU=
